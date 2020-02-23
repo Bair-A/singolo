@@ -2,9 +2,11 @@
     --black:#2d303a;
     --light-black:#323645;
     --gray:#767e9e;
+    --dark-gray:#494e62;
     --red:#e36861;
     --light-red:#f06c64;
     --white:#fff;
+    --dark-white:#f2f2f2;
 }
 
 *,
@@ -87,13 +89,14 @@ a.active{
     margin-left: 82px;
 }
 
-.main-nav li::after {
-    color: var(--white);
+.nav-point::after {
+    color: var(--dark-gray);
     font-size: 2em;
     content: "·";
     vertical-align: sub;
     margin-left: 8px;
 }
+
 
 
                                                 /* section main-slider*/
@@ -113,6 +116,14 @@ a.active{
 
 .left-arrow, .right-arrow {
     padding: 38px;
+}
+
+.left-arrow{
+    margin-left: 5px;
+}
+
+.vertical-iphone{
+    margin-right: 50px;
 }
 
 .horizontal-iphone,
@@ -135,7 +146,9 @@ a.active{
     transition: background-color linear .3s;
 }
                                                 /* section main-content */
-
+.main-content{
+    background-color: var(--dark-white);
+}
 .icon-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
