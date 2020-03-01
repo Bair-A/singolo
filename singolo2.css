@@ -1,0 +1,163 @@
+:root{
+    --black:#2d303a;
+    --light-black:#323746;
+    --gray:#767e9e;
+    --white:#dedede;
+    --gray-white:#f2f2f2;
+    --pure-white:#fff;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: "Lato", Arial, sans-serif;
+}
+
+                                        /* portfolio */
+.portfolio{
+    background-color: var(--black);
+    min-height: 870px;
+    border-bottom: 6px solid var(--light-black);
+    background-color: var(--black);
+}
+
+.portfolio h1{
+    font-size: 30px;
+    color: var(--gray);
+    font-weight: 900;
+    padding: 62px 0 20px 130px;
+}
+
+.portfolio p{
+    font-size: 18px;
+    color: var(--gray);
+    font-weight: 300;   
+    padding: 0 130px;
+}
+
+.portfolio ul{
+    padding: 15px 133px 23px;
+}
+
+.portfolio li{
+    list-style: none;
+    display: inline-block;
+}
+
+.nav_inner{
+    margin-left: 9px;
+}
+
+.portfolio a{
+    text-decoration: none;
+    color: var(--gray);     
+    border: solid 1px var(--gray); 
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 2px 5px;
+    transition: color linear .3s;
+}
+
+.portfolio a:hover{
+    color: var(--white);
+    border: solid 1px var(--white);
+}
+
+                                            /* img_section */
+
+a.active{
+    color: var(--white);
+    border: solid 1px var(--white);
+}
+
+.img_section{
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    grid-template-rows: repeat(3, 189px);
+    grid-gap: 18px 20px;
+    justify-content: center;
+}
+
+.main_img{
+    cursor: pointer;
+    transition: opacity linear .3s;
+}
+
+.main_img:hover{
+    opacity: .6;
+}
+
+
+                                                /* about_us */
+
+.about_us{
+    background-color: var(--gray-white);
+    border-bottom: 6px solid var(--pure-white);
+    min-height: 727px;
+}
+
+.about_us h2{
+    font-size: 30px;
+    color: var(--gray);
+    font-weight: 900;
+    padding: 62px 0 15px 130px;
+}   
+
+.about_us > .container > p{
+    font-size: 18px;
+    color: var(--gray);
+    font-weight: 300;   
+    padding: 0 130px;
+    line-height: 1.7em;
+    
+}
+
+.about_us > .container > p > span{
+    letter-spacing: .15px;
+}
+
+.staff{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    margin: 44px 130px;
+}
+
+.staff h3{
+    padding: 8px 0;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.staff p{
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.social_networks{
+    margin-top: 22px;
+}
+
+.social_img{
+    margin-left: 3px;
+}
+
+.social:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.social{
+    transition: opacity linear .3s;
+}
