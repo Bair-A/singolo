@@ -1,0 +1,145 @@
+:root{
+    --black:#2d303a;
+    --red:#f06c64;
+    --white:#f0d8d9;
+    --carrot-red:#ea676b;
+    --black:#2d303a;
+    --dark-red:#d6564f;
+    --pink:#f48c8f;
+    --gray: #666d89;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: "Lato", Arial, sans-serif;
+}
+
+.get_quote{
+    background-color: var(--red);
+    color: var(--white);
+    min-height: 654px;
+    border-bottom: 6px solid var(--carrot-red);
+}
+
+.get_quote h2{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 62px 40px 19px;
+    letter-spacing: -.8px;
+}
+
+.get_quote .container > p{
+    font-size: 18px;
+    padding: 0 40px;
+    letter-spacing: -.3px;
+    line-height: 1.7em;
+}
+
+.get_quote_contact{
+    display: grid;
+    grid-template-columns: 620px 300px;
+    grid-column-gap: 20px;
+    padding: 40px 40px 0;
+}
+
+.get_quote_form input{
+    margin-bottom: 17px;
+    font-size: 12px;
+    color: var(--pink);
+    padding: 12px;
+    border-radius: 5px;
+    background-color: var(--dark-red);
+    border: 0;
+}
+
+.get_quote_form input[type-text]{
+    color: var(--white);
+}
+
+.get_quote_form textarea{
+    font-size: 12px;
+    padding: 12px;   
+    letter-spacing: -1.5px; 
+    color: var(--pink);
+    border-radius: 5px;
+    min-height: 200px;
+    background-color: var(--dark-red);
+    border: 0;
+}
+.get_quote_form{
+    display: grid;
+    grid-template-columns: 1;
+}
+
+.contact_inf li{
+    list-style: none;
+}
+
+.contact_inf h3{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.contact_inf p{
+    font-size: 12px;
+    line-height: 1.8em;
+    letter-spacing: -.3px;
+    margin-bottom: 25px;
+}
+
+.contact_inf li{
+    font-size: 12px;
+    margin: 8px 0;
+}
+
+.contact_inf li img{
+    margin-right: 10px;
+}
+
+.get_quote_footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.get_quote_footer .container p{
+    font-size: 12px;
+    padding: 32px 42px 0 42px;
+    color: var(--gray);
+}
+
+.social_networks_footer{
+    margin: 20px 40px 0 0;
+}
+
+.get_quote_footer{
+    min-height: 76px;
+    background-color: var(--black);
+}
+
+.submit_rezet{
+    display: flex;
+    justify-content: center;
+}
+
+.submit_rezet input{
+    margin: 12px;
+    color: var(--white  );
+}
+
+.submit_rezet input:hover{
+    background-color: var(--white);
+    color: var(--black);
+    cursor: pointer;
+}
